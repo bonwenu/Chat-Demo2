@@ -10,7 +10,7 @@ server.listen(process.env.PORT || 3000);
 console.log("Server running...");
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/app.component.html");
+    res.sendFile(__dirname + "/holder/index.html");
 });
 
 io.sockets.on("connection", function(socket){
